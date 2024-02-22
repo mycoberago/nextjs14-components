@@ -12,12 +12,28 @@ const CountryComponent = ({country}: {country: any}) => {
         >
             {country.name.common}
         </div>
-        <Modal show={showModal} onClose={() => setShowModal(false)}>
-            <Modal.Header className='text-black'>{country.name.common}</Modal.Header>
+        <Modal 
+            className='w-screen h-screen mt-12'
+            size='lg'
+            show={showModal} onClose={() => setShowModal(false)}
+            dismissible
+        >
+            <Modal.Header 
+                className='text-black font-bold p-3'
+            />
             <Modal.Body>
-                <div>
+                <div 
+                    className='flex flex-col'
+                >
+                    <p
+                        className='text-black text-center text-3xl my-3'
+                    >{country.name.common}</p>
+
                     <img src={country.flags.png} alt={`${country.name.common} >flag`} />
-                    <p className='text-black'>Capital: {country?.capital ? country.capital[0] : 'No Capital'}</p>
+
+                    <p className='text-black my-3 text-center'>
+                        Capital: <span className='font-bold'>{country?.capital ? country.capital[0] : 'No Capital'}</span>
+                    </p>
                 </div>
             </Modal.Body>
         </Modal>
