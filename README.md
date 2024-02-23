@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 The purpose of this code is to demonstrate NextJS 14 features.  The code will continue to grow and be updated as we continue to demonstrate more features.  Below are the current features covered within the code:
 1. Server Components and how to leverage its power when fetching data on the server side and then passing it to client components for interactivity.  Here is the [YouTube video](https://youtu.be/FRDW8_kMO-M) highlighting the feature.
 
+2. Route Handlers for fetching data from client-side components as well as implement hooks for fetching with route handlers.  Here is the [YouTube video](https://youtu.be/Ei1K6THwXNE) highlighting the features.
+
 ## Getting Started
 
 First, run the development server:
