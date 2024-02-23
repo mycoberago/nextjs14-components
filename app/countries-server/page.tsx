@@ -1,5 +1,5 @@
 import React from 'react'
-import CountriesClientComponent from './CountriesClientComponent';
+import CountriesClientComponent from '../components/CountriesClientComponent';
 
 async function getCountries () {
     let initFetch = await fetch('https://restcountries.com/v3.1/all');
